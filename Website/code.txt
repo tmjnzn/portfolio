@@ -1,0 +1,385 @@
+<div class="gap"></div>
+            
+            <div class="segment-r">
+
+                <div class="logospace">
+                    <a href="https://www.behance.net" target="_new"><img class="logo" src=".\img\06_footer\behance.svg"></a>
+                </div>
+                <div class="gap"></div>
+                <div class="logospace">
+                    <a href="https://www.xing.com" target="_new"><img class="logo" src=".\img\06_footer\xing.svg"></a>
+                </div>
+                <div class="gap"></div>
+                <div class="logospace">
+                    <a href="https://www.instagram.com" target="_new"><img class="logo" src=".\img\06_footer\insta.svg"></a>
+                </div>
+                <div class="gap"></div>
+                <div class="logospace">
+                    <a href="https://www.youtube.com" target="_new"><img class="logo" src=".\img\06_footer\yt.svg"></a>
+                </div>
+
+            </div>
+
+            <div class="gap"></div>
+    
+            <div class="segment">
+
+___________________________________________________________________________
+
+<div class="page resume">
+
+                    <div class="resume-grid">
+
+                        <div class="resume-box-a">
+                                <h2>education</h2>
+                        </div>
+                        
+                        <div class="resume-box-b">
+                                <p>
+                                October 2013 - March 2018
+                                <br>
+                                Industrial Design (B.A.)
+                                <br>
+                                Bergische Universität | Wuppertal
+                                </p>   
+
+                                <div class="gap"></div>
+
+                                <p>
+                                August 2008 - June 2011
+                                <br>
+                                Technical Product Designer
+                                <br>
+                                Bertrandt Ingenieurbüro GmbH | Köln
+                                </p>      
+                                
+                                <div class="gap"></div>
+
+                                <p>
+                                August 1997 - June 2007
+                                <br>
+                                Highschool Graduation
+                                <br>
+                                Gymnasium St. Wolfhelm | Waldniel
+                                </p>                                  
+                        </div>
+
+                        <div class="resume-box-c">
+                                <h2>experience</h2>
+                        </div>
+                        
+                        <div class="resume-box-d">
+                                <p>
+                                May 2018 - present
+                                <br>
+                                UI / UX Designer
+                                <br>
+                                Mindlib | Mönchengladbach
+                                </p>
+
+                                <div class="gap"></div>
+
+                                <p>
+                                April 2017 - August 2017
+                                <br>
+                                Industrial Design Internship
+                                <br>
+                                Alfred Kärcher SE & Co. KG | Winnenden
+                                </p>
+
+                                <div class="gap"></div>
+
+                                <p>
+                                April 2016 - August 2016
+                                <br>
+                                Industrial Design Cooperation Project
+                                <br>
+                                Wuppertaler Stadtwerke | Wuppertal
+                                </p>
+
+                                <div class="gap"></div>
+
+                                <p>
+                                Oktober 2015 - Februar 2016
+                                <br>
+                                Industrial Design Cooperation Project
+                                <br>
+                                B/S/H Home Appliances GmbH | Stuttgart
+                                </p>
+                                           
+                                <div class="gap"></div>
+
+                                <p>
+                                July 2011 - September 2013
+                                <br>
+                                CAD Design Engineer
+                                <br>
+                                Bertrandt Ingenieurbüro GmbH | Köln                                
+                                <br>             
+                                <u>External Working Locations</u>
+                                <br>
+                                Carbon Grossbauteile GmbH | Wallerstein
+                                <br>
+                                Visteon Innovation & Technology | Kerpen
+                                <br>
+                                Bayerische Motorenwerke AG | München
+                                <br>
+                                Montaplast GmbH | Morsbach
+                                </p>
+                                
+                        </div>
+
+                    </div>
+
+                </div>
+
+______________________________________________________________________________________
+
+<div class="page request">
+
+                    <div class="request-grid">
+                
+                        <div class="request-box-a">
+                
+                                <div class="request-box-a-grid">
+                
+                                        <div class="request-box-a-text">
+                        
+                                            <div class="write-message">
+                                                    <h2>Message</h2>
+                                                    <p>
+                                                    You may request my full portfolio a/o resume by enabling the
+                                                    corresponding boxes below.
+                                                    </p>                                                                                                 
+                                            </div>
+                            
+                                            <div class="req-resume">                                                    
+                                                    <h2>Request Resume</h2>
+                                                    <p>
+                                                    You may also request my full portfolio by enabling the
+                                                    corresponding box below.
+                                                    </p>                                                         
+                                            </div>
+                            
+                                            <div class="req-portfolio">                                                    
+                                                    <h2>Request Portfolio</h2>
+                                                    <p>
+                                                    You may also request my full resume by enabling the
+                                                    corresponding box below.
+                                                    </p>                                                   
+                                            </div>
+                            
+                                            <div class="req-resume-portfolio">                                                    
+                                                    <h2>Request Portfolio & Resume</h2>
+                                                    <p>
+                                                    You have requested my full portfolio and resume by enabling the
+                                                    corresponding box below.
+                                                    </p>                                                    
+                                            </div>
+
+                                            
+                                            
+                                        </div>
+
+                                        <div class="checkbox-a" id="formbox">
+                                            <div>
+                                                <label><input id="checkboxMessage" type="checkbox"><span>Message</span></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-b" id="formbox">
+                                            <div id="checkboxResume" onclick="$(this).toggleClass('checked');evaluateDocuments();">
+                                                <label><span>Resume</span></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-c" id="formbox">
+                                            <div id="checkboxPortfolio" onclick="$(this).toggleClass('checked');evaluateDocuments();">
+                                                <label><span>Portfolio</span></label>
+                                            </div>
+                                        </div>
+                
+                                </div>
+                
+                        </div>
+                
+                        <div class="request-box-b">
+                
+                            <div class="request-box-b-grid">
+
+                                <div class="form-box-a" id="formbox">
+                                <input type="text" required id="fname" name="fname" placeholder="Intent Of Request">
+                                </div>
+
+                                <div class="form-box-b" id="formbox">
+                                <input type="text" required id="fname" name="fname" placeholder="First Name">
+                                </div>
+
+                                <div class="form-box-c" id="formbox">
+                                <input type="text" required id="fname" name="fname" placeholder="Last Name">
+                                </div>
+
+                                <div class="form-box-d" id="formbox">
+                                <input type="text" required id="fname" name="fname" placeholder="Company">
+                                </div>
+
+                                <div class="form-box-e" id="formbox">
+                                <input type="text" required id="fname" name="fname" placeholder="Website / Social Media">
+                                </div>
+
+                                <div class="form-box-f" id="formbox">
+                                <input type="text" required id="fname" name="fname" placeholder="Address / No">
+                                </div>
+
+                                <div class="form-box-g" id="formbox">
+                                <input type="text" required id="fname" name="fname" placeholder="Post Code">
+                                </div>
+
+                                <div class="form-box-h" id="formbox">
+                                <input type="text" required id="fname" name="fname" placeholder="City">
+                                </div>
+                                
+                                <div class="form-box-i" id="formbox">
+                                <input type="text" required id="fname" name="fname" placeholder="Country">
+                                </div>
+
+                            </div>
+                
+                        </div>
+
+                        <div class="request-box-c">
+
+                                <img class="pic" src=".\img\05_contact2\00.png" alt="Avatar" style="width:100%">
+                                
+                                <div class="write-message">
+                                    <img class="pic" src=".\img\05_contact2\01.png" alt="Avatar" style="width:100%">
+                                </div>
+    
+                                <div class="req-resume">
+                                    <img class="pic" src=".\img\05_contact2\02.png" alt="Avatar" style="width:100%">
+                                </div>
+    
+                                <div class="req-portfolio">
+                                    <img class="pic" src=".\img\05_contact2\03.png" alt="Avatar" style="width:100%">
+                                </div>
+    
+                                <div class="req-resume-portfolio">
+                                    <img class="pic" src=".\img\05_contact2\04.png" alt="Avatar" style="width:100%">
+                                </div>
+                            
+                        </div>
+
+                        <div class="request-box-d">
+                            
+                            <div class="request-box-d-grid">
+
+                            <div class="form-box-j">
+                                <textarea placeholder="Your Message" required name="fname"></textarea>
+                            </div>
+
+                            <div class="form-box-k" id="formbox">
+                                <div>
+                                    <label><input type="checkbox"><span>Send</span></label>
+                                </div>
+                            </div>
+
+                            </div>
+
+                        </div>
+                    
+                    </div>
+                
+                </div>
+
+_____________________________________________________________________
+
+<div class="page contact">
+
+                    <div class="contact-grid">
+                    
+                        <div class="contact-box-a">
+                                        <img class="pic" src=".\img\05_contact\01.png" alt="Avatar" style="width:100%">
+                                        <div class="box-overlay">
+                                            <div class="text-overlay"></div>
+                                            <div class="projectname">
+                                                <h1>Get In</h1>
+                                                <h1>Touch</h1>
+                                            </div>
+                                            <div class="projectlink">
+                                                <div class="message">
+                                                    <h5><a href="#contact" onclick="toggleForm('.write-message');evaluateDocuments();">Message</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                        </div>
+                                
+                        <div class="contact-box-b">
+                                        <img class="pic" src=".\img\05_contact\02.png" alt="Avatar" style="width:100%">
+                                        <div class="box-overlay">
+                                            <div class="text-overlay"></div>
+                                            <div class="projectname">
+                                                <h1>Full</h1>
+                                                <h1>Resume</h1>
+                                            </div>
+                                            <div class="projectlink">
+                                                <div class="portfolio">
+                                                    <h5><a href="#contact"
+                                                        onclick="toggleForm('.req-resume');$('#checkboxResume').toggleClass('checked');evaluateDocuments();">Request</a>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                        </div>
+
+                        <div class="contact-box-c">
+                            <img class="pic" src=".\img\05_contact\03.png" alt="Avatar" style="width:100%">
+                            <div class="box-overlay">
+                                <div class="text-overlay"></div>
+                                <div class="projectname">
+                                    <h1>Full</h1>
+                                    <h1>Portfolio</h1>
+                                </div>
+                                <div class="projectlink">
+                                    <div class="portfolio">
+                                        <h5><a href="#contact"
+                                            onclick="toggleForm('.req-portfolio');$('#checkboxPortfolio').toggleClass('checked');evaluateDocuments();">Request</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+____________________________________________________________________________-
+
+<div class="gap"></div>
+                <div class="gap"></div>
+
+                <div id="links" class="menu-language">
+
+                    <div class="segment-c">
+
+                        <div class="line"></div>
+
+                    </div>
+
+                    <div class="gap"></div>
+                    <div class="gap"></div>
+
+                    <div class="segment-c">
+
+                        <h3><a href="#home" onclick="toggleMenu(undefined)">en</a></h3>
+                        <div class="gap"></div>
+                        <h3><a href="#home" onclick="toggleMenu(undefined)">de</a></h3>
+                        <div class="gap"></div>
+                        <h3><a href="#home" onclick="toggleMenu(undefined)">fr</a></h3>
+                        <div class="gap"></div>
+                        <h3><a href="#home" onclick="toggleMenu(undefined)">es</a></h3>
+
+                    </div>
+
+                </div>

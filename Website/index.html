@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timo Janzon Portfolio</title>
+    <link rel="stylesheet" href=".\css\main.css">
+    <script src=".\js\jquery.min.js"></script>
+</head>
+
+
+
+<body tabindex="0">
+
+    <div class="navi">
+
+        <div class="navi-frame">
+
+            <div class="navi-tools">
+                           
+                <div class="navi-header">
+
+                    <h1>Timo Janzon</h1><h1>Industrial Designer</h1>
+
+                    <div class="chapter" id="homeHeader" data-visible="home"><h1></h1></div>
+                    <div class="chapter" id="workHeader" data-visible="work"><h1></h1></div>
+                    <div class="chapter" id="aboutHeader" data-visible="about"><h1></h1></div>
+                    <div class="chapter" id="impHeader" data-visible="imp"><h1></h1></div>
+                    
+                
+                    <div class="chapter" id="menu"><h1></h1></div>
+                
+                    <div id="project12Header"><h1>Mindlib App</h1></div>
+                    <div id="project11Header"><h1></h1></div>
+                    <div id="project10Header"><h1></h1></div>
+                    <div id="project09Header"><h1>09</h1></div>
+                    <div id="project08Header"><h1>08</h1></div>
+                    <div id="project07Header"><h1>07</h1></div>
+                    <div id="project06Header"><h1>06</h1></div>
+                    <div id="project05Header"><h1>05</h1></div>
+                    <div id="project04Header"><h1>04</h1></div>
+                    <div id="project03Header"><h1>03</h1></div>
+                    <div id="project02Header"><h1>02</h1></div>
+                    <div id="project01Header"><h1>01</h1></div>          
+                        
+                </div>
+            
+                <div class="navi-links">
+
+                    <div id="links" id="home link">
+                        <h3><a href="javascript:;" onclick="toggleMenu('homeHeader'); togglePage('home')">Home</a></h3>
+                    </div>
+
+                    <div class="link-gap"></div>
+
+                    <div id="links" id="about link">
+                        <h3><a href="javascript:;" onclick="toggleMenu('aboutHeader'); togglePage('about')">About</a></h3>
+                    </div>
+
+                    <div class="link-gap"></div>
+
+                    <div id="links" id="work link">
+                        <h3><a href="javascript:;" onclick="toggleMenu('workHeader'); togglePage('work')">Work</a></h3>
+                    </div>                    
+
+                    <div class="link-gap"></div>
+
+                    <div id="links" id="about link">
+                        <h3><a href="javascript:;" onclick="toggleMenu('impHeader'); togglePage('imprint')">Sketches</a></h3>
+                    </div>
+                
+                </div>
+
+                <div class="navi-burger">
+                    <div class="menu-btn" onclick="menuBtnClick()">
+                        <div class="menu-burger"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="small-gap"></div>
+            
+        </div>
+            
+    </div>
+        
+    <div class="menu">
+
+        <div class="menu-overlay">
+
+            <div class="menu-links">
+
+                    <div class="text-gap"></div>
+
+                    <div id="links" id="home link">
+                        <h3><a href="javascript:;" onclick="toggleMenu('homeHeader'); togglePage('home')">Home</a></h3>
+                    </div>
+
+                    <div class="link-gap"></div>
+
+                    <div id="links" id="about link">
+                        <h3><a href="javascript:;" onclick="toggleMenu('aboutHeader'); togglePage('about')">About</a></h3>
+                    </div>
+
+                    <div class="link-gap"></div>
+
+                    <div id="links" id="work link">
+                        <h3><a href="javascript:;" onclick="toggleMenu('workHeader'); togglePage('work')">Work</a></h3>
+                    </div>                    
+
+                    <div class="link-gap"></div>
+
+                    <div id="links" id="about link">
+                        <h3><a href="javascript:;" onclick="toggleMenu('impHeader'); togglePage('imprint')">Sketches</a></h3>
+                    </div>
+
+                    <div class="menu-gap"></div>
+                        
+            </div>
+
+        </div>
+        
+    </div>
+        
+    <div class="pages">
+     
+        <div class="frame">
+
+            <div class="page home">
+
+                <div class="home-grid">      
+                    
+                    <div class="home-box-a">
+
+                        <div class="home-overlay">
+
+                            <h2>Hi,</h2>                            
+                            <h2>my name is Timo Janzon.</h2>
+                            <br>
+                            <h2>I am an industrial designer from Mönchenglabach, Germany.</h2>
+                            <br>
+                            <h2>This website showcases a selection of my latest work.</h2>
+                            <br>
+                            <h2>If you like to get in contact, feel free to send me an email.</h2>
+                            <br>
+                            <h2>Enjoy!</h2>
+
+                        </div>
+
+                    </div>
+
+                    <div class="home-box-b">
+
+                        <img class="pic" src=".\img\01_home\01.png" alt="Avatar" style="width:100%"></img>
+
+                    </div>                      
+
+                </div>  
+
+            </div>
+            
+            <div class="page about">
+
+                <div class="about-grid">
+
+                        <div class="about-box-a">
+                            <div class="about-pic-grid">                        
+                                <div class="picbox"></div>                            
+                                <div class="message-overlay">    
+                                    <img class="pic" src=".\img\02_about\00.png" alt="Avatar" style="width:100%"></img>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="about-box-b">
+                            <div class="about-info-grid">
+                                <div class="picbox"></div>
+                                <div class="about-box-b-overlay-1">
+                                    <h2>I am currently looking for a permanent employment or an internship preferably in the field of industrial design or product design.</h2>
+                                </div>
+
+                                <div class="about-box-b-overlay-2">
+                                    <h1>I am currently looking for a permanent employment or an internship preferably in the field of industrial design or product design.</h1>
+                                </div>
+
+                                <div class="about-box-b-overlay-3">
+                                    <div class="projectlink">
+                                        <h5><a href="mailto:hello@tmjnzn.com">Contact</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-box-c r">
+
+                            <h2>Skills</h2>
+
+                            <br>
+
+                            <h4>Product Development</h4>
+
+                            <p>Research</p>
+                            <p>Functional Analysis</p>
+                            <p>Usage Analysis</p>
+                            <p>Conception</p>                            
+                            <p>Sketching</p>
+                            <p>2D/3D Rendering</p>
+                            <p>CAD</p>
+                            <p>Presentation</p>
+
+                            <br>
+
+                            <h4>Expertise</h4>
+
+                            <p>Plastic Construction</p>                            
+                            <p>Surface Modeling</p>                          
+                            <p>Technical Drawing</p>
+                            <p>Model Making</p>
+                            <p>Clay Modeling</p>                                                                                 
+                           
+                        </div>  
+
+                        <div class="about-box-d r">
+
+                            <h2>Experience</h2>
+
+                            <br>
+                            
+                            <h4>Mindlib</h4>
+
+                            <p>UI/UX Designer</p>
+                            <p>Mönchengladbach</p>
+                            <p>present</p>
+
+                            <br>
+
+                            <h4>Alfred Kärcher GmbH & Co. KG</h4>
+
+                            <p>Industrial Design Intern</p>                            
+                            <p>Winnenden</p>
+                            <p>2017</p>
+
+                            <br>
+
+                            <h4>Bertrandt Ingenieurbüro GmbH</h4>
+
+                            <p>CAD Designer</p>                            
+                            <p>Köln</p>
+                            <p>2011 - 2013</p>                                
+
+                        </div>
+
+                        <div class="about-box-e r">
+
+                            <h2>Education</h2>   
+
+                            <br>
+
+                            <h4>Industrial Designer</h4>
+                            <p>Bachelor's Degree (B.A.)</p>                                                        
+                            <p>Bergische Universität</p>
+                            <p>Wuppertal</p>
+                            <p>2013 - 2018</p>
+
+                            <br>
+
+                            <h4>Technical Product Designer</h4>
+                            <p>Apprenticeship</p>
+                            <p>Bertrandt Ingenieurbüro GmbH</p>
+                            <p>Köln</p>
+                            <p>2008 - 2011</p>
+                           
+                        </div>
+
+                        <div class="about-box-f r">
+
+                            <h2>Tools</h2>
+                            
+                            <br>
+
+                            <h4>since 2008</h4>
+                            <p>Catia V5</p>                            
+                            <p>Solidworks</p>
+
+                            <br>
+
+                            <h4>since 2013</h4>
+                            <p>Photoshop</p>                            
+                            <p>Illustrator</p>
+                            <p>Indesign</p>
+                            <p>Sketchbook</p>
+                            <p>Keyshot</p>
+
+                            <br>
+
+                            <h4>since 2020</h4>
+                            <p>HTML/CSS</p>       
+                           
+                        </div>
+
+                        <div class="about-box-g r">
+                           
+                            <h2>Cooperation</h2>
+
+                            <br>
+
+                            <h4>Wuppertaler Stadtwerke</h4>
+                            <p>Industrial Design Student</p>
+                            <p>6th Semester</p>
+                            <p>2016</p>
+
+                            <br>
+                            
+                            <h4>B/S/H Home Appliances GmbH</h4>
+                            <p>Industrial Design Student</p>
+                            <p>5th Semester</p>
+                            <p>2015 - 2016</p>
+
+                        </div>
+
+                        <div class="about-box-h r">
+
+                            <h2>Language</h2>
+
+                            <br>
+
+                            <h4>German</h4>                            
+                            <p>Native</p>
+
+                            <br>
+                            
+                            <h4>Englisch</h4>
+                            <p>Fluent</p>        
+                           
+                        </div>
+                                            
+                </div>
+
+            </div>
+
+            <div class="page work">
+
+                    <div class="work-grid">
+
+                        <div class="box">
+                            <img class="pic" src=".\img\03_work\00.png" alt="Avatar" style="width:100%">
+                            <div class="box-overlay">
+                                <div class="text-overlay"></div>
+                                <div class="projectname">
+                                    <h1>Delivery Kart</h1>
+                                    <p>Transportation<p>
+                                </div>
+                                <div class="comingsoon">
+                                    <h6>Coming Soon</h6>
+                                </div>
+                            </div>
+                        </div>
+                                           
+                        <div class="box">
+                            <img class="pic" src=".\img\03_work\08.png" alt="Avatar" style="width:100%">
+                            <div class="box-overlay">
+                                <div class="text-overlay"></div>
+                                <div class="projectname">
+                                    <h1>Mindlib App</h1>
+                                    <p>User Interface</p>
+                                </div>
+                                <div class="projectlink">
+                                    <h5><a href="#work" onclick="toggleProject('project12')">View Project</a></h5></div>
+                            </div>
+                        </div>
+                    
+                        <div class="box">
+                            <img class="pic" src=".\img\03_work\07.png" alt="Avatar" style="width:100%">
+                            <div class="box-overlay">
+                                <div class="text-overlay"></div>
+                                <div class="projectname">
+                                    <h1>Weather Station</h1>                                    
+                                    <p>Product<p>
+                                </div>
+                                <div class="projectlink">
+                                    <h5><a href="#work" onclick="toggleProject('project11')">View Project</a></h5></div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img class="pic" src=".\img\03_work\06.png" alt="Avatar" style="width:100%">
+                            <div class="box-overlay">
+                                <div class="text-overlay"></div>
+                                <div class="projectname">
+                                    <h1>06</h1>
+                                    <p>Categorie<p>
+                                </div>
+                                <div class="projectlink">
+                                    <h5><a href="#work" onclick="toggleProject('project10')">View Project</a></h5></div>
+                            </div>
+                        </div>
+                    
+                        <div class="box">
+                            <img class="pic" src=".\img\03_work\05.png" alt="Avatar" style="width:100%">
+                            <div class="box-overlay">
+                                <div class="text-overlay"></div>
+                                <div class="projectname">
+                                    <h1>05</h1>
+                                    <p>Categorie<p>
+                                </div>
+                                <div class="projectlink">
+                                    <h5><a href="#work" onclick="toggleProject('project09')">View Project</a></h5></div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img class="pic" src=".\img\03_work\04.png" alt="Avatar" style="width:100%">
+                            <div class="box-overlay">
+                                <div class="text-overlay"></div>
+                                <div class="projectname">
+                                    <h1>04</h1>
+                                    <p>Categorie<p>
+                                </div>
+                                <div class="projectlink">
+                                    <h5><a href="#work" onclick="toggleProject('project08')">View Project</a></h5></div>
+                            </div>
+                        </div>
+                    
+                        <div class="box">
+                            <img class="pic" src=".\img\03_work\03.png" alt="Avatar" style="width:100%">
+                            <div class="box-overlay">
+                                <div class="text-overlay"></div>
+                                <div class="projectname">
+                                    <h1>03</h1>
+                                    <p>Categorie<p>
+                                </div>
+                                <div class="projectlink">
+                                    <h5><a href="#work" onclick="toggleProject('project07')">View Project</a></h5></div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img class="pic" src=".\img\03_work\02.png" alt="Avatar" style="width:100%">
+                            <div class="box-overlay">
+                                <div class="text-overlay"></div>
+                                <div class="projectname">
+                                    <h1>02</h1>
+                                    <p>Categorie<p>
+                                </div>
+                                <div class="projectlink">
+                                    <h5><a href="#work" onclick="toggleProject('project06')">View Project</a></h5></div>
+                            </div>
+                        </div>
+                    
+                        <div class="box">
+                            <img class="pic" src=".\img\03_work\01.png" alt="Avatar" style="width:100%">
+                            <div class="box-overlay">
+                                <div class="text-overlay"></div>
+                                <div class="projectname">
+                                    <h1>01</h1>
+                                    <p>Categorie<p>
+                                </div>
+                                <div class="projectlink">
+                                    <h5><a href="#work" onclick="toggleProject('project05')">View Project</a></h5></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+                
+            <div class="page project">               
+                    
+                    <div id="project12">
+
+                        <div class="project-pic">
+                            <div class="picbox"></div>
+                            <img class="pic" src=".\img\04_projects\p12\00.png" alt="Avatar" style="width:100%"></img>
+                    </div>
+                                            
+                    <div class="outside-gap"></div>
+
+                        <div class="project-text-grid">
+
+                            <h2>
+                                Design the corporate identity for mindlib and the user interface of the mobile application.                   
+                            </h2>
+
+                            <div class="project-textbox-b">
+                                                               
+                                <p>
+                                    The Post-Kart achieved by intelligent
+                                    Product architecture and user-friendliness one
+                                    Increased efficiency in the delivery process. By
+                                    interchangeable shipment containers, that will
+                                    Loading volume increased and in optimal range
+                                    positioned to the user. The electric motor reduces the physical exertion when maneuvering the fully loaded device and bridges
+                                    long distances in rural areas. the
+                                </p>
+                                
+                                <div class="small-gap"></div>
+
+                                <p>
+                                    Driver's station speeds up and makes getting on and off easier for an ideal stop-and-go practice.
+                                    The Post-Kart achieved by intelligent
+                                    Product architecture and user-friendliness one
+                                    Increased efficiency in the delivery process. By
+                                    interchangeable shipment containers, that will
+                                    Loading volume increased and in optimal range.
+                                </p>   
+                                
+                                <div class="inside-gap"></div>
+
+                                <h4>Categorie</h4>
+                                <p>User Interface</p>
+
+                                <div class="small-gap"></div>
+
+                                <h4>Disciplines</h4>
+                                <p>Corporate Identity</p>  
+                                <p>Graphic Design</p>                              
+                                <p>Interface Design</p>
+                                <p>Usability</p>                                
+
+                                <div class="small-gap"></div>
+
+                                <h4>Year</h4>
+                                <p>WIP</p>
+
+                            </div>     
+                        
+                        </div>
+                        
+                        <div class="outside-gap"></div>
+                                                        
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p12\01.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+                        
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p12\02.gif" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+                            
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p12\03.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+                        
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p12\04.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p12\05.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+                            
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p12\06.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+                        
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p12\07.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+                            
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p12\08.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+                        
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p12\09.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p12\10.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p12\11.png" alt="Avatar" style="width:100%"></img>
+                        </div>    
+
+                        <div class="outside-gap"></div>
+
+                        <div class="project-textbox">
+                            <h4>Gallery</h4>
+                        </div>
+
+                        <div class="small-gap"></div>
+
+                        <div class="project-gallery">
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\00.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\01.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\02.gif" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\03.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\04.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\05.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\06.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\07.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\08.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\09.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\10.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p12\11.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                        </div>
+                                    
+                    </div>
+
+                    <div id="project11">
+
+                        <div class="project-pic">
+                            <div class="picbox"></div>
+                            <img class="pic" src=".\img\04_projects\p11\00.png" alt="Avatar" style="width:100%"></img>
+                    </div>
+                                            
+                    <div class="outside-gap"></div>
+
+                        <div class="project-text-grid">
+
+                            <div class="project-textbox-a">
+                                Design the corporate identity for mindlib and the user interface of the mobile application.                   
+                            </div>
+
+                            <div class="project-textbox-b">
+                                                               
+                                <p>
+                                    The Post-Kart achieved by intelligent
+                                    Product architecture and user-friendliness one
+                                    Increased efficiency in the delivery process. By
+                                    interchangeable shipment containers, that will
+                                    Loading volume increased and in optimal range
+                                    positioned to the user. The electric motor reduces the physical exertion when maneuvering the fully loaded device and bridges
+                                    long distances in rural areas. the
+                                </p>
+                                
+                                <div class="small-gap"></div>
+
+                                <p>
+                                    Driver's station speeds up and makes getting on and off easier for an ideal stop-and-go practice.
+                                    The Post-Kart achieved by intelligent
+                                    Product architecture and user-friendliness one
+                                    Increased efficiency in the delivery process. By
+                                    interchangeable shipment containers, that will
+                                    Loading volume increased and in optimal range.
+                                </p>   
+                                
+                                <div class="inside-gap"></div>
+
+                                <h4>Categorie</h4>
+                                <p>User Interface</p>
+
+                                <div class="small-gap"></div>
+
+                                <h4>Year</h4>
+                                <p>2018</p>
+
+                            </div>     
+                        
+                        </div>
+                        
+                        <div class="outside-gap"></div>
+                                                        
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p11\01.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+                        
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p11\02.gif" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+                            
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p11\03.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+                        
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p11\04.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p11\05.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+                            
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p11\06.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+                        
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p11\07.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+                            
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p11\08.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+                        
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p11\09.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p11\10.png" alt="Avatar" style="width:100%"></img>
+                        </div>
+
+                        <div class="big-gap"></div>
+
+                        <div class="project-pic">
+                                <div class="picbox"></div>
+                                <img class="pic" src=".\img\04_projects\p11\11.png" alt="Avatar" style="width:100%"></img>
+                        </div>    
+
+                        <div class="outside-gap"></div>
+
+                        <div class="project-textbox">
+                            <h2>Gallery</h2>
+                        </div>
+
+                        <div class="small-gap"></div>
+
+                        <div class="project-gallery">
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\00.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\01.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\02.gif" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\03.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\04.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\05.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\06.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\07.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\08.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\09.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\10.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                            <div class="picbox">
+                                <img class="pic" src=".\img\04_projects\p11\11.png" alt="Avatar" style="width:100%"></img>
+                            </div>
+                        </div>
+                                    
+                    </div>
+
+            </div>
+
+            <div class="page imprint">
+                                                          
+                <h2>Copyright</h2>
+                <p>
+                I hereby declare that this portfolio is my own unaided work. All text and artwork published in this portfolio belong to Timo Janzon and are subject to German copyright and ancillary copyright law unless otherwise noted. 
+                Any parts of this portfolio that are reproduced or transmitted in any form or by any means require the prior written consent of the orginator or respective creator. This applies in particular to electronic or
+                mechanical duplication, including photocopying, xerography, videography recording, editing, translation and storage or processing of content in databases or other electronic media and systems.
+                This portfolio has not yet been published or publicly presented.
+                       
+                I hereby declare that this portfolio is my own unaided work. All text and artwork published in this portfolio belong to Timo Janzon and are subject to German copyright and ancillary copyright law unless otherwise noted. 
+                Any parts of this portfolio that are reproduced or transmitted in any form or by any means require the prior written consent of the orginator or respective creator. This applies in particular to electronic or
+                mechanical duplication, including photocopying, xerography, videography recording, editing, translation and storage or processing of content in databases or other electronic media and systems.
+                This portfolio has not yet been published or publicly presented.                                                       
+                </p>
+                
+                <br>
+
+                <h2>Programming</h2>
+                <p>Carsten Klaffke</p>
+                <p>IT Consultant</p>
+                <p>Software Engineer</p>
+                <p>Computer Scientist</p>
+                <h5><a href="https://carsten-klaffke.de" target="_blank">carsten-klaffke.de</a></h5>
+                
+            </div>
+                    
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="frame">
+
+            <div class="footer-grid">                
+
+                <div class="footer-box-a">
+
+                    <h4><a href="mailto:hello@tmjnzn.com">Contact</a></h4>
+                
+                    <div class="small-gap"></div>
+
+                    <div id="links" id="about link">
+                        <h4><a href="javascript:;" onclick="toggleMenu('impHeader'); togglePage('imprint')">Imprint</a></h4>
+                    </div>
+
+                    <div class="small-gap"></div>
+
+                    <h4><a href="">Data protection</a></h4>
+
+                </div>
+
+                <div class="footer-box-b">
+                                        
+                    <div class="logospace bh">
+                        <div class="logo">
+                            <a href="https://www.behance.net" target="_new"><img class="logo" src=".\img\05_footer\behance.svg"></a>
+                        </div>
+                    </div>    
+    
+                    <div class="logo-gap"></div>
+    
+                    <div class="logospace ig">
+                        <div class="logo">
+                            <a href="https://www.instagram.com" target="_new"><img class="logo" src=".\img\05_footer\insta.svg"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="logo-gap"></div>
+    
+                    <div class="logospace xg">
+                        <div class="logo">
+                            <a href="https://www.xing.com" target="_new"><img class="logo" src=".\img\05_footer\xing.svg"></a>
+                        </div>
+                    </div>
+        
+                </div>
+
+                <div class="footer-box-c">
+
+                <p>© 2023 Timo Janzon. All rights reserved.<p>
+
+                </div>     
+                                            
+            </div>            
+
+            <div class="big-gap"></div>
+
+        </div>
+
+    </div>
+
+</body>
+
+
+<script src=".\js\main.js"></script>
+
+
+</html>
