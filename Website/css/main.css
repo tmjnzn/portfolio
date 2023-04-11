@@ -199,7 +199,7 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     height: 18px;
-    width: 18px;
+    width: 21px;
     cursor: pointer;
 }
 
@@ -1313,30 +1313,35 @@ input[type=text]:valid {
     grid-column-gap: 60px;
     grid-row-gap: 60px;
     grid-template-areas:
-    "a b"
-    "c .";
+    "a ."
+    "b c";
 }
 
 .footer-box-a {
     grid-area: a;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 .footer-box-b {
     grid-area: b;
     position: relative;
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: flex-end;
+    transition: .3s ease;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .footer-box-c {
     grid-area: c;
     position: relative;
     display: flex;
-    transition: .3s ease;
-    opacity: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .logospace {
@@ -1372,6 +1377,11 @@ input[type=text]:valid {
 
 .ig:hover {
     background-color: rgb(193, 53, 132);
+    transition: .3s ease;
+}
+
+.yt:hover {
+    background-color: red;
     transition: .3s ease;
 }
 
@@ -1712,13 +1722,17 @@ p {
     grid-column-gap: 45px;
     grid-row-gap: 45px;
     grid-template-areas:
-    "b"
     "a"
-    "c";
+    "c"
+    "b";
 }
 
-.footer-box-b {
-    justify-content: flex-start;
+.footer-box-c {
+    grid-area: c;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 }
