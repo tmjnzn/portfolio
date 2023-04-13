@@ -18,113 +18,123 @@
 
     <div class="navi">
 
-        <div class="navi-frame">
+        <div class="navi-bar">
 
-            <div class="navi-tools">
-                           
-                <div class="navi-header">
+            <div class="frame">
 
-                    <h1>Timo Janzon</h1>
-
-                    <div class="chapter" id="homeHeader" data-visible="home"><h1></h1></div>
-                    <div class="chapter" id="workHeader" data-visible="work"><h1></h1></div>
-                    <div class="chapter" id="aboutHeader" data-visible="about"><h1></h1></div>
-                    <div class="chapter" id="impHeader" data-visible="imp"><h1></h1></div>
+                <div class="navi-elements">
+                            
+                        <div class="navi-header">
                     
-                
-                    <div class="chapter" id="menu"><h1></h1></div>
-                
-                    <div id="project12Header"><h1>Mindlib App</h1></div>
-                    <div id="project11Header"><h1></h1></div>
-                    <div id="project10Header"><h1></h1></div>
-                    <div id="project09Header"><h1>09</h1></div>
-                    <div id="project08Header"><h1>08</h1></div>
-                    <div id="project07Header"><h1>07</h1></div>
-                    <div id="project06Header"><h1>06</h1></div>
-                    <div id="project05Header"><h1>05</h1></div>
-                    <div id="project04Header"><h1>04</h1></div>
-                    <div id="project03Header"><h1>03</h1></div>
-                    <div id="project02Header"><h1>02</h1></div>
-                    <div id="project01Header"><h1>01</h1></div>          
+                            <div class="chapter" id="homeHeader" data-visible="home"><h1>Timo Janzon</h1></div>
+                            <div class="chapter" id="workHeader" data-visible="work"><h1>Timo Janzon</h1></div>
+                            <div class="chapter" id="aboutHeader" data-visible="about"><h1>Timo Janzon</h1></div>
+                            <div class="chapter" id="sketchesHeader" data-visible="sketches"><h1>Timo Janzon</h1></div>
+
+                            <div class="chapter" id="contactHeader" data-visible="imp"><h1>Contact</h1></div>
+                            <div class="chapter" id="legalHeader" data-visible="imp"><h1>Legal Notice</h1></div>
+                            <div class="chapter" id="dataHeader" data-visible="imp"><h1>Data Protection</h1></div>
+                            
                         
-                </div>
-            
-                <div class="navi-links">
-
-                    <div id="links" id="home link">
-                        <h3><a href="javascript:;" onclick="toggleMenu('homeHeader'); togglePage('home')">Home</a></h3>
-                    </div>
-
-                    <div class="link-gap"></div>
-
-                    <div id="links" id="about link">
-                        <h3><a href="javascript:;" onclick="toggleMenu('aboutHeader'); togglePage('about')">About</a></h3>
-                    </div>
-
-                    <div class="link-gap"></div>
-
-                    <div id="links" id="work link">
-                        <h3><a href="javascript:;" onclick="toggleMenu('workHeader'); togglePage('work')">Work</a></h3>
-                    </div>                    
-
-                    <div class="link-gap"></div>
-
-                    <div id="links" id="about link">
-                        <h3><a href="javascript:;" onclick="toggleMenu('impHeader'); togglePage('imprint')">Sketches</a></h3>
-                    </div>
+                            <div class="chapter" id="menu"><h1>Menu</h1></div>
+                        
+                            <div id="project12Header"><h1>Mindlib App</h1></div>
+                            <div id="project11Header"><h1></h1></div>
+                            <div id="project10Header"><h1></h1></div>
+                            <div id="project09Header"><h1>09</h1></div>
+                            <div id="project08Header"><h1>08</h1></div>
+                            <div id="project07Header"><h1>07</h1></div>
+                            <div id="project06Header"><h1>06</h1></div>
+                            <div id="project05Header"><h1>05</h1></div>
+                            <div id="project04Header"><h1>04</h1></div>
+                            <div id="project03Header"><h1>03</h1></div>
+                            <div id="project02Header"><h1>02</h1></div>
+                            <div id="project01Header"><h1>01</h1></div>          
+                            
+                        </div>
                 
+                        <div class="navi-links">
+
+                            <div id="links" id="home link">
+                                <h3><a href="javascript:;" onclick="toggleMenu('homeHeader'); togglePage('home')">Home</a></h3>
+                            </div>
+
+                            <div class="link-gap"></div>
+
+                            <div id="links" id="about link">
+                                <h3><a href="javascript:;" onclick="toggleMenu('aboutHeader'); togglePage('about')">About</a></h3>
+                            </div>
+
+                            <div class="link-gap"></div>
+
+                            <div id="links" id="work link">
+                                <h3><a href="javascript:;" onclick="toggleMenu('workHeader'); togglePage('work')">Work</a></h3>
+                            </div>                    
+
+                            <div class="link-gap"></div>
+
+                            <div id="links" id="sketches link">
+                                <h3><a href="javascript:;" onclick="toggleMenu('sketchesHeader'); togglePage('sketches')">Sketches</a></h3>
+                            </div>
+                        
+                        </div>
+
+                        <div class="navi-burger">
+                            <div class="menu-btn" onclick="menuBtnClick()">
+                                <div class="menu-burger"></div>
+                            </div>
+                        </div>
+
                 </div>
 
-                <div class="navi-burger">
-                    <div class="menu-btn" onclick="menuBtnClick()">
-                        <div class="menu-burger"></div>
-                    </div>
-                </div>
-
+                <div class="small-gap"></div>
+                
             </div>
-
-            <div class="small-gap"></div>
             
         </div>
-            
-    </div>
-        
-    <div class="menu">
 
-        <div class="menu-overlay">
+        <div class="menu">
 
-            <div class="menu-links">
+            <div class="menu-overlay">
+
+                <div class="frame">
 
                     <div class="text-gap"></div>
 
-                    <div id="links" id="home link">
-                        <h3><a href="javascript:;" onclick="toggleMenu('homeHeader'); togglePage('home')">Home</a></h3>
-                    </div>
+                    <div class="burger-links">
+                    
+                        <div id="links" id="home link">
+                            <h3><a href="javascript:;" onclick="toggleMenu('homeHeader'); togglePage('home')">Home</a></h3>
+                        </div>
 
-                    <div class="link-gap"></div>
+                        <div class="link-gap"></div>
 
-                    <div id="links" id="about link">
-                        <h3><a href="javascript:;" onclick="toggleMenu('aboutHeader'); togglePage('about')">About</a></h3>
-                    </div>
+                        <div id="links" id="about link">
+                            <h3><a href="javascript:;" onclick="toggleMenu('aboutHeader'); togglePage('about')">About</a></h3>
+                        </div>
 
-                    <div class="link-gap"></div>
+                        <div class="link-gap"></div>
 
-                    <div id="links" id="work link">
-                        <h3><a href="javascript:;" onclick="toggleMenu('workHeader'); togglePage('work')">Work</a></h3>
-                    </div>                    
+                        <div id="links" id="work link">
+                            <h3><a href="javascript:;" onclick="toggleMenu('workHeader'); togglePage('work')">Work</a></h3>
+                        </div>                    
 
-                    <div class="link-gap"></div>
+                        <div class="link-gap"></div>
 
-                    <div id="links" id="about link">
-                        <h3><a href="javascript:;" onclick="toggleMenu('impHeader'); togglePage('imprint')">Sketches</a></h3>
+                        <div id="links" id="sketches link">
+                            <h3><a href="javascript:;" onclick="toggleMenu('sketchesHeader'); togglePage('sketches')">Sketches</a></h3>
+                        </div>                    
+
                     </div>
 
                     <div class="menu-gap"></div>
-                        
-            </div>
 
+                </div>
+
+            </div>
+            
         </div>
-        
+
     </div>
         
     <div class="pages">
@@ -371,7 +381,8 @@
                                     <p>User Interface</p>
                                 </div>
                                 <div class="projectlink">
-                                    <h5><a href="#work" onclick="toggleProject('project12')">View Project</a></h5></div>
+                                    <h5><a href="#work" onclick="toggleProject('project12')">View Project</a></h5>
+                                </div>
                             </div>
                         </div>
                     
@@ -468,6 +479,13 @@
 
                     </div>
 
+            </div>
+
+            <div class="page sketches">
+
+                <h2>Sketches</h2>                                        
+                <p>Man kennt es</p>
+                
             </div>
                 
             <div class="page project">               
@@ -607,54 +625,7 @@
                         <div class="project-pic">
                                 <div class="picbox"></div>
                                 <img class="pic" src=".\img\04_projects\p12\11.png" alt="Avatar" style="width:100%"></img>
-                        </div>    
-
-                        <div class="outside-gap"></div>
-
-                        <div class="project-textbox">
-                            <h4>Gallery</h4>
-                        </div>
-
-                        <div class="small-gap"></div>
-
-                        <div class="project-gallery">
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\00.png" alt="Avatar" style="width:100%"></img>
-                            </div>
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\01.png" alt="Avatar" style="width:100%"></img>
-                            </div>
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\02.gif" alt="Avatar" style="width:100%"></img>
-                            </div>
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\03.png" alt="Avatar" style="width:100%"></img>
-                            </div>
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\04.png" alt="Avatar" style="width:100%"></img>
-                            </div>
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\05.png" alt="Avatar" style="width:100%"></img>
-                            </div>
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\06.png" alt="Avatar" style="width:100%"></img>
-                            </div>
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\07.png" alt="Avatar" style="width:100%"></img>
-                            </div>
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\08.png" alt="Avatar" style="width:100%"></img>
-                            </div>
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\09.png" alt="Avatar" style="width:100%"></img>
-                            </div>
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\10.png" alt="Avatar" style="width:100%"></img>
-                            </div>
-                            <div class="picbox">
-                                <img class="pic" src=".\img\04_projects\p12\11.png" alt="Avatar" style="width:100%"></img>
-                            </div>
-                        </div>
+                        </div>                            
                                     
                     </div>
 
@@ -838,7 +809,34 @@
 
             </div>
 
-            <div class="page imprint">
+            <div class="page contact">
+                                                          
+                <p>Timo Janzon</p>
+                <p>Industrial Designer</p>
+                
+                <br>
+
+                <p>Ehrenbruderstraße 32</p>
+                <p>12345 Ehrenhausen</p>
+
+                <br>
+
+                <p>(+033) 12345 12345678</p>
+                <h5><a href="mailto:hello@timojanzon.com" target="_blank">hello@timojanzon.com</a></h5>
+                <h5><a href="https://timojanzon.com" target="_blank">www.timojanzon.com</a></h5>
+        
+                <br>
+
+                <h2>Programming</h2>
+                <p>Carsten Klaffke</p>
+                <p>IT Consultant</p>
+                <p>Software Engineer</p>
+                <p>Computer Scientist</p>
+                <h5><a href="https://carsten-klaffke.de" target="_blank">carsten-klaffke.de</a></h5>
+                
+            </div>
+
+            <div class="page legal">
                                                           
                 <h2>Copyright</h2>
                 <p>
@@ -861,6 +859,15 @@
                 <p>Software Engineer</p>
                 <p>Computer Scientist</p>
                 <h5><a href="https://carsten-klaffke.de" target="_blank">carsten-klaffke.de</a></h5>
+                
+            </div>
+
+            <div class="page data">
+                                                          
+                <h2>Data Protection</h2>
+                <p>Man kennt es</p>
+                
+                <br>                
                 
             </div>
                     
@@ -910,33 +917,31 @@
 
                 <div class="footer-box-b">
 
-                <p>© 2023 Timo Janzon. All rights reserved.<p>
+                    <p>© 2023 Timo Janzon. All rights reserved.<p>
 
                 </div>
                 
                 <div class="footer-box-c">
 
                     <div id="links">
-                        <h4><a href="mailto:hello@tmjnzn.com">Contact</a></h4>
+                        <h4><a href="javascript:;" onclick="toggleMenu('contactHeader'); togglePage('contact')">Contact</a></h4>
                     </div>
                 
                     <div class="link-gap"></div>
 
                     <div id="links">
-                        <h4><a href="javascript:;" onclick="toggleMenu('impHeader'); togglePage('imprint')">Legal notice</a></h4>
+                        <h4><a href="javascript:;" onclick="toggleMenu('legalHeader'); togglePage('legal')">Legal notice</a></h4>
                     </div>                                      
 
                     <div class="link-gap"></div>
                     
                     <div id="links">
-                        <h4><a href="javascript:;" onclick="toggleMenu('impHeader'); togglePage('imprint')">Data Protection</a></h4>
+                        <h4><a href="javascript:;" onclick="toggleMenu('dataHeader'); togglePage('data')">Data Protection</a></h4>
                     </div>
 
                 </div>
                                             
             </div>            
-
-            <div class="outside-gap"></div>
 
         </div>
 
