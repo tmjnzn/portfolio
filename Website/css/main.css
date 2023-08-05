@@ -36,7 +36,7 @@ body {
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
-    background-color: rgb(240,240,240);
+    background-color: rgb(245,245,245);
 }
 
 body::-webkit-scrollbar {
@@ -86,44 +86,40 @@ body::-webkit-scrollbar {
 .navi-bar {
     position: relative;
     display: flex;
-    width: 100%;
     height: 120px;
     justify-content: center;
+    align-items: flex-end;
     background-color: rgba(0, 0, 0, 0.90);
 }
 
 .navi-elements {
     position: relative;
     display: flex;
-    height: 100%;
-    align-items: flex-end;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .navi-header {
-    position: relative;
-    width: 100%;
+    position: relative;    
     display: flex;
+    width: 100%;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .navi-links {
     position: relative;
-    width: 100%;
     display: flex;
+    width: 100%;
     justify-content: flex-end;
-    align-items: center;
-    display: none;
+    display: ;
 }
 
 .navi-burger {
     position: relative;
     display: flex;
     align-items: center;
-    height: 30px;
-    display: ;
+    height: 28px;
+    display: none;
 }
 
 .menu {
@@ -142,7 +138,7 @@ body::-webkit-scrollbar {
     display: flex;
     width: 100%;
     flex-direction: column;
-    align-items: flex-end;  
+    align-items: flex-end;
 }
 
 .chapter {
@@ -160,7 +156,8 @@ body::-webkit-scrollbar {
 
 
 
-/*----- burger -----*/
+/*----- burger 
+rgb(129, 236, 236)-----*/
 
 .menu-btn {
     position: relative;
@@ -208,7 +205,7 @@ body::-webkit-scrollbar {
     animation-name: ani-top-for;
     animation-duration: 0.6s;
     transform: rotate(-45deg);
-    background-color:  rgb(129, 236, 236);
+    background-color: rgb(255, 107, 129);
     visibility: visible;
 }
 
@@ -216,7 +213,7 @@ body::-webkit-scrollbar {
     animation-name: ani-bottom-for;
     animation-duration: 0.6s;
     transform: rotate(45deg);
-    background-color:  rgb(129, 236, 236);
+    background-color: rgb(255, 107, 129);
     visibility: visible;
 }
 
@@ -292,11 +289,11 @@ body::-webkit-scrollbar {
 @keyframes ani-top-back {
     0% {
         transform: rotate(-45deg);
-        background-color:  rgb(129, 236, 236);
+        background-color: rgb(255, 107, 129);
     }
     50% {
         transform: translateY(0px);
-        background-color:  rgb(129, 236, 236);
+        background-color: rgb(255, 107, 129);
     }
     51% {
         transform: translateY(0px);
@@ -309,11 +306,11 @@ body::-webkit-scrollbar {
 @keyframes ani-bottom-back {
     0% {
         transform: rotate(45deg);
-        background-color:  rgb(129, 236, 236);
+        background-color:rgb(255, 107, 129);
     }
     50% {
         transform: translateY(0px);
-        background-color:  rgb(129, 236, 236);
+        background-color: rgb(255, 107, 129);
     }
     51% {
         transform: translateY(0px);
@@ -351,16 +348,15 @@ body::-webkit-scrollbar {
 .home-grid {
     position: relative;
     display: grid;
-    grid-column-gap: 60px;
-    grid-row-gap: 60px;
     background-color: white;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    border-radius: 4px;
     grid-template-areas:
     "a a a . . ."
     "a a a b b b"
     "a a a b b b"
-    ". . . b b b";
+    "a a a b b b";
 }
 
 .home-overlay {
@@ -542,8 +538,8 @@ body::-webkit-scrollbar {
 .box {
     position: relative;
     padding-top: 100%;
-    transition: .3s ease;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .pic {
@@ -555,6 +551,18 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: .3s ease-in-out;
+}
+
+.picer {    
+    width: 100%;
+    height: 100%;    
+    object-fit: cover;
+}
+
+.img {
+    position: relative;
+    padding-top: 66.67%;
 }
 
 .comingsoon-pic {
@@ -578,7 +586,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.75);
     opacity: 0;
-    transition: .3s ease;
+    transition: .3s ease-in-out;
 }
 
 .text-overlay {
@@ -596,8 +604,7 @@ body::-webkit-scrollbar {
     align-items: center;
     height: 100%;
     width: 100%;
-    transition: .3s ease;
-    transform: translateY(-30px);
+    transition: .3s ease-in-out;
     opacity: 0;
 }
 
@@ -609,7 +616,7 @@ body::-webkit-scrollbar {
     align-items: center;
     height: 100%;
     width: 100%;
-    transition: .3s ease;
+    transition: .3s ease-in-out;
     transform: translateY(30px);
     opacity: 0;
 }
@@ -622,7 +629,7 @@ body::-webkit-scrollbar {
     align-items: center;
     height: 100%;
     width: 100%;
-    transition: .3s ease;
+    transition: .3s ease-in-out;
     transform: translateY(30px);
     opacity: 0;
 }
@@ -664,49 +671,19 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.slideshow-grid {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
-}
-
-.slideshow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    overflow: hidden;
-}
-
 .project-pic{
-    position: relative;
-    display: grid;
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    cursor: pointer;
+    width: 100%;
+    height: 100%;    
+    object-fit: cover;
 }
 
 .project-text-grid{
     position: relative;
     display: grid;
-    grid-column-gap: 90px;
+    grid-column-gap: 120px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
     "a b";
-}
-
-.project-gallery{
-    position: relative;
-    display: grid;
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
-    grid-template-columns: repeat(9, 1fr);
 }
 
 .project-textbox {
@@ -733,6 +710,14 @@ body::-webkit-scrollbar {
     position: relative;
     display: flex;    
     flex-direction: column;
+}
+
+.project-gallery{
+    position: relative;
+    display: grid;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    grid-template-columns: repeat(9, 1fr);
 }
 
 .picbox {
@@ -861,18 +846,18 @@ body::-webkit-scrollbar {
 .footer {
     position: relative;
     display: flex;
-    justify-content: center;
-    margin-bottom: 120px;
+    height: 240px;
+    justify-content: center;    
+    background-color: rgba(0, 0, 0, 0.90);
 }
 
 .footer-grid {
     position: relative;
     display: grid;
-    grid-column-gap: 60px;
-    grid-row-gap: 60px;
+    grid-row-gap: 32px;
     grid-template-areas:
-    "a ."
-    "b c";
+    "a b"
+    "c .";
 }
 
 .footer-box-a {
@@ -880,17 +865,17 @@ body::-webkit-scrollbar {
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .footer-box-b {
     grid-area: b;
     position: relative;
     display: flex;
-    transition: .3s ease;
-    justify-content: flex-start;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .footer-box-c {
@@ -898,8 +883,8 @@ body::-webkit-scrollbar {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .logospace {
@@ -907,40 +892,37 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    background-color: rgba(0, 0, 0, 0.90);
-    transition: .3s ease;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    transition: .3s ease-in-out;
 }
 
 .logo {    
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
+    transition: .3s ease-in-out;
 }
 
 .logo-gap {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
 }
 
 .bh:hover {
     background-color: rgb(5, 62, 255);
-    transition: .3s ease;
 }
 
 .xg:hover {
     background-color: rgb(18, 101, 103);
-    transition: .3s ease;
 }
 
 .ig:hover {
     background-color: rgb(193, 53, 132);
-    transition: .3s ease;
 }
 
 .yt:hover {
     background-color: red;
-    transition: .3s ease;
 }
 
 
@@ -966,7 +948,7 @@ body::-webkit-scrollbar {
 
 /*-----data protection-----*/
 
-.data {
+.imp {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -992,67 +974,66 @@ h4 a:hover {
 
 
 h1 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     font-family: 'asse 11';
-    line-height: 30px;
+    line-height: 28px;
     color: white;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     font-family: 'asse 11';
-    line-height: 30px;
+    line-height: 28px;
     color: black;
 }
 
 h3 a {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     font-family: 'asse 11';
-    line-height: 30px;
+    line-height: 28px;
     color: rgb(170, 170, 170);
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'asse 11';
-    line-height: 30px;
+    line-height: 24px;
     color: black;
 }
 
-h4 a {
-    font-size: 18px;
+h5 {
+    font-size: 20px;
     font-weight: 500;
     font-family: 'asse 11';
-    line-height: 30px;
-    color: black;
+    line-height: 28px;
+    color: rgb(255, 107, 129);
 }
-
 
 h5 a {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     font-family: 'asse 11';
-    line-height: 30px;
+    line-height: 28px;
     color: rgb(129, 236, 236);
 }
 
 h6 {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 500;
     font-family: 'asse 11';
-    line-height: 30px;
-    color: orange;
+    line-height: 36px;
+    color: black;
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     font-family: 'asse 6';
-    line-height: 30px;
+    line-height: 24px;
     color: rgb(170, 170, 170);
 }
 
@@ -1083,28 +1064,31 @@ p {
 
 .menu-gap {
     width: 100%;
-    height: 45px;
+    height: 32px;
 }
 
 .link-gap {
-    width: 30px;
-    height: 30px ;
+    width: 32px;
+    height: 16px ;
 }
 
 .big-gap {
     width: 100%;
-    height: 90px;
+    height: 80px;
 }
 
 .small-gap {
     width: 100%;
-    height: 15px;
+    height: 16px;
 }
 
 .header-gap {
     height: 6px;
 }
 
+.thirtytwo-gap {
+    height: 48px;
+}
 
 
 
@@ -1152,14 +1136,16 @@ p {
     height: 45px;
 }
 
+.link-gap {
+    width: 32px;
+    height: 32px ;
+}
+
 
 
 
 /*navi*/
 
-.navi-bar {
-    height: 99px;
-}
 
 .navi-links {
     display: none;
@@ -1318,25 +1304,21 @@ p {
 
 /*footer*/
 
+
+.footer {
+    height: auto;
+}
+
 .footer-grid {
-    position: relative;
-    display: grid;
-    grid-column-gap: 45px;
-    grid-row-gap: 45px;
     grid-template-areas:
     "a"
-    "c"
-    "b";
+    "b"
+    "c";
 }
 
-.footer-box-c {
-    grid-area: c;
-    position: relative;
-    display: flex;
+.footer-box-b {
     flex-direction: column;
     align-items: flex-start;
-}
-
 }
 
 

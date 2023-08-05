@@ -7,7 +7,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Timo Janzon Portfolio</title>
+    <title>Timo Janzon | Industrial Design</title>
     <link rel="stylesheet" href=".\css\main.css">
     <script src=".\js\jquery.min.js"></script>
 </head>
@@ -25,16 +25,19 @@
                 <div class="navi-elements">
                             
                         <div class="navi-header">
-                    
+
+                                                
                             <div class="chapter" id="homeHeader" data-visible="home"><h1>Timo Janzon</h1></div>
                             <div class="chapter" id="workHeader" data-visible="work"><h1>Timo Janzon</h1></div>
                             <div class="chapter" id="aboutHeader" data-visible="about"><h1>Timo Janzon</h1></div>
                             <div class="chapter" id="sketchesHeader" data-visible="sketches"><h1>Timo Janzon</h1></div>
 
-                            <div class="chapter" id="contactHeader" data-visible="imp"><h1>Contact</h1></div>
-                            <div class="chapter" id="legalHeader" data-visible="imp"><h1>Legal Notice</h1></div>
-                            <div class="chapter" id="dataHeader" data-visible="imp"><h1>Data Protection</h1></div>
-                            
+                            <div class="chapter" id="contactHeader" data-visible="contact"><h1>Contact</h1></div>
+                            <div class="chapter" id="legalHeader" data-visible="legal"><h1>Legal Notice</h1></div>
+                            <div class="chapter" id="impHeader" data-visible="imp"><h1>Imprint</h1></div>
+                            <div class="chapter" id="resumeHeader" data-visible="resume"><h1>Resume</h1></div>
+
+                                                    
                         
                             <div class="chapter" id="menu"><h1>Menu</h1></div>
                         
@@ -69,12 +72,12 @@
 
                             <div id="links" id="work link">
                                 <h3><a href="javascript:;" onclick="toggleMenu('workHeader'); togglePage('work')">Work</a></h3>
-                            </div>                    
+                            </div>
 
                             <div class="link-gap"></div>
 
-                            <div id="links" id="sketches link">
-                                <h3><a href="javascript:;" onclick="toggleMenu('sketchesHeader'); togglePage('sketches')">Sketches</a></h3>
+                            <div id="links" id="work link">
+                                <h3><a href="javascript:;" onclick="toggleMenu('resumeHeader'); togglePage('resume')">Resume</a></h3>
                             </div>
                         
                         </div>
@@ -99,7 +102,7 @@
 
                 <div class="frame">
 
-                    <div class="text-gap"></div>
+                    <div class="menu-gap"></div>
 
                     <div class="burger-links">
                     
@@ -149,14 +152,15 @@
 
                         <div class="home-overlay">
 
-                            <h2>Hi,</h2>                            
-                            <h2>my name is Timo Janzon.</h2>
+                            <h2>Hi, my name is Timo Janzon.</h2>
+                            <br>                                
+                            <h2>I'm a product designer based near Mönchengladbach, Germany.</h2>
                             <br>
-                            <h2>I am an industrial designer from Mönchenglabach, Germany.</h2>
+                            <h2>My expertise includes surface modeling, plastic construction, technical drawing and model making.</h2>
                             <br>
-                            <h2>This website showcases a selection of my latest work.</h2>
+                            <h2>This website showcases a selection of my multifaceted work.</h2>
                             <br>
-                            <h2>If you like to get in contact, feel free to send me an email.</h2>
+                            <h2>If you like to get in contact feel free to send me a message.</h2>
                             <br>
                             <h2>Enjoy!</h2>
 
@@ -364,10 +368,10 @@
                                 <div class="text-overlay"></div>
                                 <div class="projectname">
                                     <h1>Delivery Kart</h1>
-                                    <p>Transportation<p>
+                                    <p>Product Design<p>
                                 </div>
                                 <div class="comingsoon">
-                                    <h6>Coming Soon</h6>
+                                    <h5>Coming Soon</h5>
                                 </div>
                             </div>
                         </div>
@@ -378,11 +382,11 @@
                                 <div class="text-overlay"></div>
                                 <div class="projectname">
                                     <h1>Mindlib App</h1>
-                                    <p>User Interface</p>
+                                    <p>Interface Design</p>
                                 </div>
-                                <div class="projectlink">
-                                    <h5><a href="#work" onclick="toggleProject('project12')">View Project</a></h5>
-                                </div>
+                                <div class="projectlink">                                    
+                                        <h5><a href="#work" onclick="toggleProject('project12')">View Project</a></h5>
+                                    </div>                                
                             </div>
                         </div>
                     
@@ -392,7 +396,7 @@
                                 <div class="text-overlay"></div>
                                 <div class="projectname">
                                     <h1>Weather Station</h1>                                    
-                                    <p>Product<p>
+                                    <p>Product Design<p>
                                 </div>
                                 <div class="projectlink">
                                     <h5><a href="#work" onclick="toggleProject('project11')">View Project</a></h5></div>
@@ -404,8 +408,8 @@
                             <div class="box-overlay">
                                 <div class="text-overlay"></div>
                                 <div class="projectname">
-                                    <h1>06</h1>
-                                    <p>Categorie<p>
+                                    <h1>Team Logo</h1>
+                                    <p>Graphic Design<p>
                                 </div>
                                 <div class="projectlink">
                                     <h5><a href="#work" onclick="toggleProject('project10')">View Project</a></h5></div>
@@ -480,30 +484,20 @@
                     </div>
 
             </div>
-
-            <div class="page sketches">
-
-                <h2>Sketches</h2>                                        
-                <p>Man kennt es</p>
-                
-            </div>
                 
             <div class="page project">               
                     
-                    <div id="project12">
-
-                        <div class="project-pic">
-                            <div class="picbox"></div>
-                            <img class="pic" src=".\img\04_projects\p12\00.png" alt="Avatar" style="width:100%"></img>
-                    </div>
-                                            
+                <div id="project12">
+                        
+                    <img class="project-pic" src=".\img\04_projects\p12\00.png" alt="Avatar" style="width:100%"></img>
+                                                                
                     <div class="outside-gap"></div>
 
-                        <div class="project-text-grid">
+                    <div class="project-text-grid">
 
-                            <h2>
+                            <h6>
                                 Design the corporate identity for mindlib and the user interface of the mobile application.                   
-                            </h2>
+                            </h6>
 
                             <div class="project-textbox-b">
                                                                
@@ -536,100 +530,69 @@
                                 <div class="small-gap"></div>
 
                                 <h4>Disciplines</h4>
-                                <p>Corporate Identity</p>  
-                                <p>Graphic Design</p>                              
-                                <p>Interface Design</p>
-                                <p>Usability</p>                                
+                                <p>Corporate Identity</p>
+                                <p>Interface Design</p>                                                                
 
                                 <div class="small-gap"></div>
 
                                 <h4>Year</h4>
-                                <p>WIP</p>
+                                <p>Work in progress</p>
 
                             </div>     
                         
-                        </div>
+                    </div>
                         
-                        <div class="outside-gap"></div>
-                                                        
-                        <div class="project-pic">
-                                <div class="picbox"></div>
-                                <img class="pic" src=".\img\04_projects\p12\01.png" alt="Avatar" style="width:100%"></img>
-                        </div>
-                        
-                        <div class="big-gap"></div>
+                    <div class="outside-gap"></div>
 
-                        <div class="project-pic">
-                                <div class="picbox"></div>
-                                <img class="pic" src=".\img\04_projects\p12\02.gif" alt="Avatar" style="width:100%"></img>
-                        </div>
+                    <img class="project-pic" src=".\img\04_projects\p12\01.png"></img>
 
-                        <div class="big-gap"></div>
-                            
-                        <div class="project-pic">
-                                <div class="picbox"></div>
-                                <img class="pic" src=".\img\04_projects\p12\03.png" alt="Avatar" style="width:100%"></img>
-                        </div>
-                        
-                        <div class="big-gap"></div>
+                    <div class="big-gap"></div>
 
-                        <div class="project-pic">
-                                <div class="picbox"></div>
-                                <img class="pic" src=".\img\04_projects\p12\04.png" alt="Avatar" style="width:100%"></img>
-                        </div>
+                    <img class="project-pic" src=".\img\04_projects\p12\02.png"></img>
 
-                        <div class="big-gap"></div>
+                    <div class="big-gap"></div>
 
-                        <div class="project-pic">
-                                <div class="picbox"></div>
-                                <img class="pic" src=".\img\04_projects\p12\05.png" alt="Avatar" style="width:100%"></img>
-                        </div>
+                    <img class="project-pic" src=".\img\04_projects\p12\03.gif"></img>
 
-                        <div class="big-gap"></div>
-                            
-                        <div class="project-pic">
-                                <div class="picbox"></div>
-                                <img class="pic" src=".\img\04_projects\p12\06.png" alt="Avatar" style="width:100%"></img>
-                        </div>
-                        
-                        <div class="big-gap"></div>
+                    <div class="big-gap"></div>
+                    
+                    <img class="project-pic" src=".\img\04_projects\p12\04.png"></img>
 
-                        <div class="project-pic">
-                                <div class="picbox"></div>
-                                <img class="pic" src=".\img\04_projects\p12\07.png" alt="Avatar" style="width:100%"></img>
-                        </div>
+                    <div class="big-gap"></div>
 
-                        <div class="big-gap"></div>
-                            
-                        <div class="project-pic">
-                                <div class="picbox"></div>
-                                <img class="pic" src=".\img\04_projects\p12\08.png" alt="Avatar" style="width:100%"></img>
-                        </div>
-                        
-                        <div class="big-gap"></div>
+                    <img class="project-pic" src=".\img\04_projects\p12\05.png"></img>
 
-                        <div class="project-pic">
-                                <div class="picbox"></div>
-                                <img class="pic" src=".\img\04_projects\p12\09.png" alt="Avatar" style="width:100%"></img>
-                        </div>
+                    <div class="big-gap"></div>
 
-                        <div class="big-gap"></div>
+                    <img class="project-pic" src=".\img\04_projects\p12\06.png"></img>
 
-                        <div class="project-pic">
-                                <div class="picbox"></div>
-                                <img class="pic" src=".\img\04_projects\p12\10.png" alt="Avatar" style="width:100%"></img>
-                        </div>
+                    <div class="big-gap"></div>
 
-                        <div class="big-gap"></div>
+                    <img class="project-pic" src=".\img\04_projects\p12\07.png"></img>
 
-                        <div class="project-pic">
-                                <div class="picbox"></div>
-                                <img class="pic" src=".\img\04_projects\p12\11.png" alt="Avatar" style="width:100%"></img>
-                        </div>                            
-                                    
+                    <div class="big-gap"></div>
+
+                    <img class="project-pic" src=".\img\04_projects\p12\08.png"></img>
+
+                    <div class="big-gap"></div>
+                    
+                    <img class="project-pic" src=".\img\04_projects\p12\09.png"></img>
+
+                    <div class="big-gap"></div>
+
+                    <img class="project-pic" src=".\img\04_projects\p12\10.png"></img>
+
+                    <div class="big-gap"></div>
+
+                    <img class="project-pic" src=".\img\04_projects\p12\11.png"></img>
+
+                    <div class="big-gap"></div>
+
+                    <img class="project-pic" src=".\img\04_projects\p12\12.png"></img>
+                                        
                     </div>
 
-                    <div id="project11">
+                <div id="project11">
 
                         <div class="project-pic">
                             <div class="picbox"></div>
@@ -805,7 +768,7 @@
                             </div>
                         </div>
                                     
-                    </div>
+                </div>
 
             </div>
 
@@ -851,23 +814,12 @@
                 This portfolio has not yet been published or publicly presented.                                                       
                 </p>
                 
-                <br>
-
-                <h2>Programming</h2>
-                <p>Carsten Klaffke</p>
-                <p>IT Consultant</p>
-                <p>Software Engineer</p>
-                <p>Computer Scientist</p>
-                <h5><a href="https://carsten-klaffke.de" target="_blank">carsten-klaffke.de</a></h5>
-                
             </div>
 
-            <div class="page data">
+            <div class="page imp">
                                                           
-                <h2>Data Protection</h2>
-                <p>Man kennt es</p>
-                
-                <br>                
+                <h2>Imprint</h2>
+                <p>Man kennt es</p>                      
                 
             </div>
                     
@@ -877,7 +829,9 @@
 
     <div class="footer">
 
-        <div class="frame">
+        <div class="frame">            
+
+            <div class="thirtytwo-gap"></div>
 
             <div class="footer-grid">                
                
@@ -909,7 +863,7 @@
     
                     <div class="logospace yt">
                         <div class="logo">
-                            <a href="https://www.xing.com" target="_new"><img class="logo" src=".\img\05_footer\yt.svg"></a>
+                            <a href="https://www.youtube.com" target="_new"><img class="logo" src=".\img\05_footer\yt.svg"></a>
                         </div>
                     </div>
         
@@ -917,32 +871,34 @@
 
                 <div class="footer-box-b">
 
+                    <div id="links">
+                        <h3><a href="javascript:;" onclick="toggleMenu('impHeader'); togglePage('imp')">Imprint</a></h3>
+                    </div>
+
+                    <div class="link-gap"></div>
+
+                    <div id="links">
+                        <h3><a href="javascript:;" onclick="toggleMenu('legalHeader'); togglePage('legal')">Legal notice</a></h3>
+                    </div>                    
+
+                    <div class="link-gap"></div>
+
+                    <div id="links">
+                        <h3><a href="mailto:hello@timojanzon.com">Contact</a></h3>
+                    </div>                    
+                
+                </div>
+
+                <div class="footer-box-c">
+
                     <p>© 2023 Timo Janzon. All rights reserved.<p>
 
                 </div>
-                
-                <div class="footer-box-c">
-
-                    <div id="links">
-                        <h4><a href="javascript:;" onclick="toggleMenu('contactHeader'); togglePage('contact')">Contact</a></h4>
-                    </div>
-                
-                    <div class="link-gap"></div>
-
-                    <div id="links">
-                        <h4><a href="javascript:;" onclick="toggleMenu('legalHeader'); togglePage('legal')">Legal notice</a></h4>
-                    </div>                                      
-
-                    <div class="link-gap"></div>
-                    
-                    <div id="links">
-                        <h4><a href="javascript:;" onclick="toggleMenu('dataHeader'); togglePage('data')">Data Protection</a></h4>
-                    </div>
-
-                </div>
                                             
-            </div>            
-
+            </div>
+            
+            <div class="thirtytwo-gap"></div>
+            
         </div>
 
     </div>
