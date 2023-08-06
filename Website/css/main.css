@@ -1086,7 +1086,7 @@ p {
     height: 6px;
 }
 
-.thirtytwo-gap {
+.middle-gap {
     height: 48px;
 }
 
@@ -1146,6 +1146,9 @@ p {
 
 /*navi*/
 
+.navi-bar {
+    height: 100px;
+}
 
 .navi-links {
     display: none;
@@ -1170,8 +1173,9 @@ p {
 
 .home-grid {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-template-areas:
+    "a a a a"
     "a a a a"
     "a a a a"
     "a a a a"
@@ -1232,12 +1236,16 @@ p {
 .work-grid {
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .project-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+}
+
+.box {
+    padding-top: 66.66%;
 }
 
 .box-overlay {
