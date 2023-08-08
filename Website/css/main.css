@@ -56,8 +56,8 @@ body::-webkit-scrollbar {
 .pages {
     position: relative;
     display: flex;
-    margin-top: 300px;
-    margin-bottom: 180px;
+    margin-top: 280px;
+    margin-bottom: 160px;
     justify-content: center;
 }
 
@@ -86,9 +86,9 @@ body::-webkit-scrollbar {
 .navi-bar {
     position: relative;
     display: flex;
-    height: 120px;
     justify-content: center;
     align-items: flex-end;
+    height: 120px;
     background-color: rgba(0, 0, 0, 0.90);
 }
 
@@ -675,15 +675,19 @@ rgb(129, 236, 236)-----*/
     width: 100%;
     height: 100%;    
     object-fit: cover;
+    border-radius: 4px;
 }
 
 .project-text-grid{
     position: relative;
     display: grid;
     grid-column-gap: 120px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 60px;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
     grid-template-areas:
-    "a b";
+    "a b"
+    ". c";
 }
 
 .project-textbox {
@@ -694,23 +698,35 @@ rgb(129, 236, 236)-----*/
 
 .project-textbox-a {    
     grid-area: a;
-    width: 100%;
     position: relative;
-    display: flex;    
-    flex-direction: column;
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'asse 11';
-    line-height: 36px;
-    color: black;
+    display: flex;
 }
 
 .project-textbox-b {    
     grid-area: b;
     position: relative;
-    display: flex;    
-    flex-direction: column;
+    display: inline;
 }
+
+.project-textbox-c {  
+    grid-area: c;    
+    position: relative;
+    display: flex;
+}
+
+.tags {
+    display: block;
+}
+
+.broker-tag {    
+  display: inline-block;
+  background: black;
+  padding: 4px 12px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+}
+
 
 .project-gallery{
     position: relative;
@@ -921,6 +937,10 @@ rgb(129, 236, 236)-----*/
     background-color: rgb(193, 53, 132);
 }
 
+.il:hover {
+    background-color: rgb(0, 119, 181);
+}
+
 .yt:hover {
     background-color: red;
 }
@@ -1101,8 +1121,8 @@ p {
 /*frames*/
 
 .pages {
-    margin-top: 198px;
-    margin-bottom: 90px;
+    margin-top: 160px;
+    margin-bottom: 80px;
 }
 
 .frame {
@@ -1141,13 +1161,18 @@ p {
     height: 32px ;
 }
 
+h6 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
 
 
 
 /*navi*/
 
 .navi-bar {
-    height: 100px;
+    height: 80px;
 }
 
 .navi-links {
@@ -1173,9 +1198,8 @@ p {
 
 .home-grid {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-    "a a a a"
     "a a a a"
     "a a a a"
     "a a a a"
@@ -1291,7 +1315,8 @@ p {
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas:
     "a"
-    "b";
+    "b"
+    "c";
 }
 
 .project-textbox-a {    
@@ -1308,7 +1333,7 @@ p {
 }
 
 
-   
+
 
 /*footer*/
 
